@@ -38,7 +38,7 @@ header{
     border-style: solid;
 }
 
-.main-index, .main-about {
+.main-index{
     background-image: url(../images/hockey1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,7 +48,27 @@ header{
     height: 60vh;
 }
 
-nav, .texto-index{
+.main-about{
+    background-image: url(../images/hockey2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px 50px 40px 50px;
+    background-position-y: 10px;
+    border-style: solid;
+    height: 60vh;
+}
+
+.main-contact{
+    background-image: url(../images/hockey3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px 50px 40px 50px;
+    background-position-y: 10px;
+    border-style: solid;
+    height: 60vh;
+}
+
+nav, .texto-index, .texto-about, .texto-contact{
     display: inline-block;
     height: 50vh;
     vertical-align: top;
@@ -72,11 +92,19 @@ a{
     font-weight: bolder;
 }
 
-.texto-index{
+.texto-index, .texto-about, .texto-contact{
     background-color: rgba(0, 0, 0, 0.462);
     color: white;
     border-radius: 1rem;
     padding: 1rem;
     width: 78%;
     font-size: 14px;
+}
+
+.mail{
+    background-color: unset;
+    text-align: center;
+    display: inline;
+    color: blanchedalmond;
+    text-decoration: underline;
 }
