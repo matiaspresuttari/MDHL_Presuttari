@@ -9,15 +9,14 @@ header{
     background-image: url(../images/design1_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -19vh;
-    height: 25vh;
-    margin: 40px 50px 5px 50px;
-    border-style: solid;
+    background-position-y: -14vh;
+    height: 20vh;
+    border-bottom:solid;
 }
 
 .title{
     background-color: rgba(141, 141, 141, 0.462);
-    margin-right: 29%;
+    margin-right: 35%;
     padding-left: 1%;
 }
 
@@ -32,7 +31,7 @@ header{
 #logo{
     width: 80px;
     position: absolute;
-    top: 182px;
+    top: 115px;
     right: 120px;
     background-color: white;
     border-style: solid;
@@ -42,36 +41,80 @@ header{
     background-image: url(../images/hockey1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 5px 50px 40px 50px;
     background-position-y: 10px;
-    border-style: solid;
-    height: 60vh;
+    height: 80vh;
 }
 
 .main-about{
     background-image: url(../images/hockey2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 5px 50px 40px 50px;
     background-position-y: 10px;
-    border-style: solid;
-    height: 60vh;
+    height: 80vh;
 }
 
 .main-contact{
     background-image: url(../images/hockey3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 5px 50px 40px 50px;
-    background-position-y: 10px;
-    border-style: solid;
-    height: 60vh;
+    height: 80vh;
 }
 
-nav, .texto-index, .texto-about, .texto-contact{
+.main-info{
+    background-image: url(../images/hockey1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+    height: 80vh;
+}
+
+.main-rules{
+    background-image: url(../images/hockey5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+
+nav, .texto-index, .texto-about, .texto-contact, .texto-info, .texto-rules{
     display: inline-block;
-    height: 50vh;
+    height: 69vh;
     vertical-align: top;
+}
+
+.texto-rules{
+    height: 100vh;
+}
+
+.texto-rules h3{
+    text-align: center;
+}
+
+.texto-rules ol, .texto-rules ul{
+    padding-left: 30px;
+}
+
+.info-ad{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-ad div{
+    width: 100%;
+    display: flex;
+    padding-bottom: 0.8rem;
+}
+
+.info-contacto{
+    display: flex;
+}
+
+.mention{
+    text-align: center;
+}
+
+.texto-about article, .texto-index article, .texto-contact p{
+    padding-bottom: 8px;
 }
 
 nav{
@@ -92,7 +135,7 @@ a{
     font-weight: bolder;
 }
 
-.texto-index, .texto-about, .texto-contact{
+.texto-index, .texto-about, .texto-contact, .texto-info, .texto-rules{
     background-color: rgba(0, 0, 0, 0.462);
     color: white;
     border-radius: 1rem;
@@ -101,10 +144,29 @@ a{
     font-size: 14px;
 }
 
+
 .mail{
     background-color: unset;
     text-align: center;
     display: inline;
     color: blanchedalmond;
     text-decoration: underline;
+}
+
+.lista-abc{
+    list-style-type: lower-latin;
+}
+
+.tabla th, .tabla td{
+    padding: 2px 5px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 1.5px;
+}
+
+.negrita{
+    font-weight: bold;
+    padding-right: 0.3rem;
 }
