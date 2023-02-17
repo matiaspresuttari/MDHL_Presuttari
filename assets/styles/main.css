@@ -49,7 +49,7 @@ header{
     width: 80px;
     position: absolute;
     top: 115px;
-    right: 120px;
+    right: 10vw;
     background-color: white;
     border-style: solid;
 }
@@ -77,9 +77,11 @@ a{
     background-color: orange;
     margin-bottom: 10px;
     border-radius: 1rem;
-    padding-top: 0.3rem;
     text-decoration: none;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .texto-index, .texto-about, .texto-contact, .texto-info, .texto-rules, .texto-reg{
@@ -96,6 +98,26 @@ a{
     padding-right: 0.3rem;
 }
 
+@media (max-width: 590px) {
+    #logo{
+        right: 10px;
+        top: 40px;
+    }
+
+    nav{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .texto-index, .texto-about, .texto-contact, .texto-info, .texto-rules, .texto-reg{
+        width: 100%;
+        border-top-style: solid;
+        border-radius: 0rem;
+        padding: 1rem;
+    }
+}
+
+
 
 /* ---------------------------------- */
 /* ----------- index.html ----------- */
@@ -109,6 +131,14 @@ a{
     height: 80vh;
 }
 
+@media (max-width: 590px){
+    .main-index{
+        background-size: 102vh;
+        background-position-x: center;
+    }
+}
+
+
 
 /* ---------------------------------- */
 /* ----------- about.html ----------- */
@@ -120,6 +150,13 @@ a{
     background-size: cover;
     background-position-y: 10px;
     height: 80vh;
+}
+
+@media (max-width: 590px){
+    .main-about{
+        background-size: 90vh;
+        background-position-x: center;
+    }
 }
 
 
@@ -143,6 +180,13 @@ a{
     text-decoration: underline;
 }
 
+@media (max-width: 590px){
+    .main-contact{
+        background-size: 97vh;
+        background-position-x: center;
+    }
+}
+
 
 
 /* ---------------------------------- */
@@ -156,20 +200,13 @@ a{
     height: 170vh;
 }
 
-.info-ad{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.info-ad div{
+.info-ad p{
     width: 100%;
-    display: flex;
     padding-bottom: 0.8rem;
 }
 
-.info-contacto{
-    display: flex;
+.info-ad{
+    padding-top: 0.8rem;
 }
 
 .tabla th, .tabla td{
@@ -190,6 +227,20 @@ iframe{
     border-radius: 1rem;
 }
 
+@media (max-width: 590px){
+    .main-info{
+        background-size: 104vh;
+        background-position-x: center;
+        height: 330vh;
+    }
+
+    iframe{
+        width: 93vw;
+    }
+}
+
+
+
 /* ---------------------------------- */
 /* ----------- rules.html ----------- */
 /* ---------------------------------- */
@@ -198,11 +249,11 @@ iframe{
     background-image: url(../images/hockey5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh;
+    height: 120vh;
 }
 
 .texto-rules{
-    height: 100vh;
+    height: 93%;
 }
 
 .texto-rules h3{
@@ -219,6 +270,14 @@ iframe{
 
 .lista-abc{
     list-style-type: lower-latin;
+}
+
+@media (max-width: 590px){
+    .main-rules{
+        background-size: 121vh;
+        background-position-x: center;
+        height: 200vh;
+    }
 }
 
 
@@ -254,4 +313,11 @@ fieldset{
 
 .flex{
     display: flex;
+}
+
+@media (max-width: 590px){
+    .main-reg{
+        background-size: 97vh;
+        background-position-x: center;
+    }
 }
