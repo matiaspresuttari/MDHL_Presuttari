@@ -28,6 +28,7 @@ header{
     padding-left: 1%;
     text-shadow: 2px 2px 3px red;
     font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid;
 }
 
 .subtitulo{
@@ -147,18 +148,27 @@ h3{
     background-image: url(../images/hockey1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 10px;
     height: 80vh;
 }
 
 .texto-index{
-    font-size:20px;
+    font-size:26px;
+    height: 48vh;
 }
 
 @media (max-width: 590px){
     .main-index{
-        background-size: 102vh;
+        background-size: 100vh;
         background-position-x: center;
+    }
+
+    nav{
+        margin-top: 2rem;
+        margin-bottom: -10px;
+    }
+
+    .texto-index{
+        margin-top: -2rem;
     }
 }
 
@@ -177,13 +187,21 @@ h3{
 }
 
 .texto-about{
-    height: 90vh;
+    height: 80vh;
 }
 
 @media (max-width: 590px){
     .main-about{
         background-size: 90vh;
         background-position-x: center;
+    }
+
+    .texto-about{
+        height: 60vh;
+    }
+
+    nav{
+        margin-bottom: -20px;
     }
 }
 
@@ -208,10 +226,18 @@ h3{
     text-decoration: underline;
 }
 
+.texto-contact{
+    height: 48vh;
+}
+
 @media (max-width: 590px){
     .main-contact{
         background-size: 97vh;
         background-position-x: center;
+    }
+
+    .texto-contact{
+        height: 20vh;
     }
 }
 
@@ -255,7 +281,7 @@ h3{
 }
 
 .texto-info{
-    height: 94%;
+    height: 154vh;
 }
 
 iframe{
@@ -268,11 +294,15 @@ iframe{
     .main-info{
         background-size: 104vh;
         background-position-x: center;
-        height: 330vh;
+        height: 310vh;
     }
 
     iframe{
         width: 93vw;
+    }
+
+    .texto-info{
+        height: 250vh;
     }
 }
 
