@@ -21,14 +21,13 @@ header{
     background-size: cover;
     background-position-y: -14vh;
     height: 20vh;
-
 }
 
 .titulo{
-    background-color: rgba(141, 141, 141, 0.462);
-    margin-right: 35%;
+    background-color: rgba(35, 35, 35, 0.729);
     padding-left: 1%;
-    text-shadow: 2px 2px 3px orange;
+    text-shadow: 2px 2px 3px red;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .subtitulo{
@@ -39,7 +38,7 @@ header{
     height: 35px;
     margin-bottom: 1rem;
     padding-top: 1px;
-    border-color: orange;
+    border-color: rgb(255, 0, 0);
     border-bottom-style: solid;
     border-top-style: solid;
 
@@ -52,6 +51,7 @@ header{
     right: 10vw;
     background-color: white;
     border-style: solid;
+    border-color: red;
 }
 
 nav, .texto-index, .texto-about, .texto-contact, .texto-info, .texto-rules, .texto-reg{
@@ -69,6 +69,10 @@ nav{
     padding: 0.6rem;
 }
 
+.activo{
+    background-color: orangered;
+}
+
 a{
     display: block;
     width: 100%;
@@ -82,10 +86,12 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(51, 51, 51);
 }
 
 .texto-index, .texto-about, .texto-contact, .texto-info, .texto-rules, .texto-reg{
-    background-color: rgba(0, 0, 0, 0.462);
+    background-color: rgba(0, 0, 0, 0.589);
     color: white;
     border-radius: 1rem;
     padding: 1rem;
@@ -96,6 +102,14 @@ a{
 .negrita{
     font-weight: bold;
     padding-right: 0.3rem;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 @media (max-width: 590px) {
@@ -117,6 +131,12 @@ a{
     }
 }
 
+@media (min-width: 590px) {
+    .texto-index, .texto-about{
+        font-size:20px;   
+    }
+}
+
 
 
 /* ---------------------------------- */
@@ -129,6 +149,10 @@ a{
     background-size: cover;
     background-position-y: 10px;
     height: 80vh;
+}
+
+.texto-index{
+    font-size:20px;
 }
 
 @media (max-width: 590px){
@@ -149,7 +173,11 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 10px;
-    height: 80vh;
+    height: 100vh;
+}
+
+.texto-about{
+    height: 90vh;
 }
 
 @media (max-width: 590px){
@@ -187,6 +215,13 @@ a{
     }
 }
 
+@media (min-width: 590px) {
+    
+
+    .texto-contact{
+        font-size: 24px;
+    }
+}
 
 
 /* ---------------------------------- */
@@ -197,7 +232,7 @@ a{
     background-image: url(../images/hockey1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 170vh;
+    height: 200vh;
 }
 
 .info-ad p{
@@ -216,6 +251,7 @@ a{
     border-color: black;
     border-radius: 5px;
     border-width: 1.5px;
+    background-color: rgba(50, 50, 50, 0.799);
 }
 
 .texto-info{
@@ -225,6 +261,7 @@ a{
 iframe{
     margin: 0.1rem;
     border-radius: 1rem;
+    width: 49%;
 }
 
 @media (max-width: 590px){
@@ -249,7 +286,7 @@ iframe{
     background-image: url(../images/hockey5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
+    height: 140vh;
 }
 
 .texto-rules{
@@ -280,6 +317,12 @@ iframe{
     }
 }
 
+@media (min-width: 800px){
+    .texto-rules{
+        font-size: 17px;
+    }
+}
+
 
 
 /* ----------------------------------- */
@@ -290,7 +333,7 @@ iframe{
     background-image: url(../images/hockey3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh;
+    height: 130vh;
 }
 
 .formulario{
@@ -301,6 +344,7 @@ iframe{
 fieldset{
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .texto-reg{
